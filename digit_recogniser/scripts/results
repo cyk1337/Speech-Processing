@@ -1,0 +1,29 @@
+#!/bin/sh
+HOME=${DATA:-/Users/yekun/Desktop/0SP/digit_recogniser}
+DATA=${DATA:-${HOME}/loc_data}
+
+shopt -s extglob
+# for TU in `cat ${HOME}/resources/test_list`
+# do
+   #
+   # -I ${DATA}/lab/test/s1718204_test.mlf \
+   # -I ${DATA}/lab/test/fionac_test.mlf \
+  HResults -p \
+            -I ${DATA}/lab/test/everyone.mlf \
+           ${HOME}/resources/word_list \
+           ${HOME}/rec/*.rec
+           # rec/s1718204_test*.rec \
+           #  rec/fionac_test*.rec
+# done
+
+# ${HOME}/rec/${TU}_test?(_)??.rec
+
+# to do results for more than one speaker you need to load more than
+# one MLF and more than one set of .rec files. Do it like this:
+#
+# HResults -p \
+#  -I ${DATA}/lab/test/simonk_test.mlf \
+#  -I ${DATA}/lab/test/scottn_test.mlf \
+#  resources/word_list \
+#  rec/simonk_test*.rec \
+#  rec/scottn_test*.rec

@@ -1,0 +1,14 @@
+signal milena_test_seq
+type 0
+comment created using xlabel Sat Dec  7 19:38:44 2002
+font -misc-*-bold-*-*-*-15-*-*-*-*-*-*-*
+separator ;
+nfields 1
+#
+    0.448622   -1 junk
+    1.040502   -1 seven
+    1.798259   -1 junk
+    2.171482   -1 three
+    2.963168   -1 junk
+    3.562588   -1 zero
+    3.935811   -1 junk

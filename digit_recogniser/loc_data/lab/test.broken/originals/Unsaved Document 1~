@@ -1,0 +1,26 @@
+HResults -p \
+ -I /home/simonk/data/sp1/lab/test/markm_test.mlf 
+ -I /home/simonk/data/sp1/lab/test/jamesh_test.mlf \
+ -I /home/simonk/data/sp1/lab/test/guy_test.mlf \
+ -I /home/simonk/data/sp1/lab/test/sarah_test.mlf \
+ -I /home/simonk/data/sp1/lab/test/fionac_test.mlf \
+ -I /home/simonk/data/sp1/lab/test/stav_test.mlf \
+ -I /home/simonk/data/sp1/lab/test/s0126339_test.mlf \
+ -I /home/simonk/data/sp1/lab/test/s0451342_test.mlf \
+ -I /home/simonk/data/sp1/lab/test/s0676515_test.mlf \
+ -I /home/simonk/data/sp1/lab/test/s0452991_test.mlf \
+ -I /home/simonk/data/sp1/lab/test/s0127196_test.mlf \
+ -I /home/simonk/data/sp1/lab/test/kit_test.mlf \
+ resources/word_list \
+ rec/markm_test?(_)??.rec 
+ rec/jamesh_test?(_)??.rec \
+ rec/guy_test?(_)??.rec \
+ rec/sarah_test?(_)??.rec \
+ rec/fionac_test?(_)??.rec \
+ rec/stav_test?(_)??.rec \
+ rec/s0126339_test?(_)??.rec \
+ rec/s0451342_test?(_)??.rec \
+ rec/s0676515_test?(_)??.rec \
+ rec/s0452991_test?(_)??.rec \
+ rec/s0127196_test?(_)??.rec \
+ rec/kit_test?(_)??.rec

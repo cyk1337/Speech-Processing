@@ -1,0 +1,68 @@
+signal YiluoTest
+type 0
+color 121
+comment created using WaveSurfer Tue Nov 22 20:53:51 2016
+font -misc-*-bold-*-*-*-15-*-*-*-*-*-*-*
+separator ;
+nfields 1
+#
+    0.960000  121 break
+    1.607500  121 seven
+    2.122500  121 break
+    2.420000  121 one
+    3.122500  121 break
+    3.735000  121 three
+    4.460000  121 break
+    4.995000  121 eight
+    5.772500  121 break
+    6.130000  121 two
+    6.957500  121 break
+    7.335000  121 five
+    8.332500  121 break
+    8.933481  121 zero
+    9.714409  121 break
+    10.194981  121 four
+    11.164705  121 break
+    11.568042  121 nine
+    12.271736  121 break
+    12.881032  121 six
+    14.314165  121 break
+    14.683175  121 nine
+    15.498430  121 break
+    15.918931  121 one
+    16.674114  121 break
+    17.257665  121 six
+    17.987104  121 break
+    18.424768  121 two
+    19.076972  121 break
+    19.780666  121 three
+    20.432870  121 break
+    20.870533  121 eight
+    21.642880  121 break
+    22.080543  121 four
+    22.749911  121 break
+    23.281972  121 zero
+    24.045738  121 break
+    24.414748  121 five
+    25.187095  121 break
+    25.616177  121 seven
+    27.066473  121 break
+    27.486973  121 nine
+    28.036197  121 break
+    28.636912  121 eight
+    30.121534  121 break
+    30.739412  121 six
+    31.365871  121 break
+    31.769208  121 four
+    32.610208  121 break
+    32.996382  121 one
+    33.785892  121 break
+    34.317953  121 three
+    35.167535  121 break
+    35.536545  121 two
+    36.368964  121 break
+    36.712229  121 five
+    37.501739  121 break
+    37.930821  121 seven
+    38.771821  121 break
+    39.243811  121 eight

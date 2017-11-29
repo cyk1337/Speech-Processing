@@ -1,0 +1,47 @@
+#!/bin/sh
+
+CURRENT=${CURRENT:-/Users/yekun/Desktop/0SP/digit_recogniser}
+DATA=${DATA:-${CURRENT}/loc_data}
+
+TEST=$1
+
+
+rm -f rec/*.rec
+
+shopt -s extglob
+# TU=s1718204
+# for TU in `cat ${CURRENT}/resources/test_list`
+for TU in `cat ${TEST}`
+do
+  for F in `ls ${DATA}/mfcc/test/${TU}_test?(_)??.mfcc`
+  do
+   FF=`basename $F .mfcc`
+   echo
+   echo Doing $F
+
+   HVite -T 1 -C ${CURRENT}/resources/CONFIG \
+  	-d ${CURRENT}/models/hmm1 \
+  	-l ${CURRENT}/rec \
+  	-w ${CURRENT}/resources/grammar_as_network \
+  	${CURRENT}/resources/dictionary \
+  	${CURRENT}/resources/word_list \
+  	$F
+
+
+    # at this point, the special shell variable $? contains the exit status of HInit
+# for readability, let's put that status into a variable with a nicer name
+STATUS=$?
+
+# test whether the return status is 0 (indicates success)
+if [ ${STATUS} = 0 ]
+then
+ echo "HInit ran without error"
+else
+ echo "Something went wrong in HVite, which exited with code "${STATUS}
+ # a good idea is to exit this script with the same error code
+ # (or some other non-zero value, if you prefer)
+ # so that anything calling this script can also detect the error
+ exit ${STATUS}
+fi
+  done
+done

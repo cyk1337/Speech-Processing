@@ -1,0 +1,23 @@
+#!/bin/sh
+
+HOME=${DATA:-/Users/yekun/Desktop/0SP/digit_recogniser}
+U=s1718204
+DATA=${DATA:-${HOME}/loc_data}
+
+# train each initialised model
+for WORD in `cat ${HOME}/resources/word_list`
+do
+
+ echo training model of $WORD
+
+ HRest -T 1 \
+	-G ESPS \
+        -m 1 \
+        -C ${HOME}/resources/CONFIG \
+        -l $WORD \
+        -M ${HOME}/models/hmm1 \
+        -L ${DATA}/lab/train/ \
+	${HOME}/models/hmm0/$WORD \
+	${DATA}/mfcc/train/${U}_train.mfcc
+
+done

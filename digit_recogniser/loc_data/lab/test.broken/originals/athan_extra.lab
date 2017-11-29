@@ -1,0 +1,28 @@
+signal athan_extra
+type 0
+comment created using xlabel Wed Dec  4 03:23:36 2002
+font -misc-*-bold-*-*-*-15-*-*-*-*-*-*-*
+separator ;
+nfields 1
+#
+    0.764259   -1 junk
+    1.517111   -1 zero
+    1.882130   -1 junk
+    2.395439   -1 three
+    3.148291   -1 junk
+    3.764261   -1 five
+    4.243324   -1 junk
+    4.842181   -1 one
+    5.335525   -1 junk
+    5.928678   -1 zero
+    6.404924   -1 junk
+    7.038001   -1 seven
+    7.631154   -1 junk
+    8.090277   -1 three
+    8.760426   -1 junk
+    9.142566   -1 two
+    9.698647   -1 junk
+   10.237618   -1 one
+   10.805106   -1 junk
+   11.332670   -1 one
+   11.977172   -1 junk

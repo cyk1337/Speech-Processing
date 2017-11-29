@@ -1,0 +1,27 @@
+#!/bin/sh
+
+HOME=${DATA:-/Users/yekun/Desktop/0SP/digit_recogniser}
+U="s1718204"
+DATA=${DATA:-${HOME}/loc_data}
+# how many states is determined by the choice of prototype model
+# remember - two of these states are dummy, so the 3state model only
+# has a single emitting state
+PROTO=5state
+set -x
+# initialise each model
+for WORD in `cat ${HOME}/resources/word_list`
+do
+
+ echo Initialising model of $WORD
+
+ HInit -T 1 \
+	-G ESPS \
+        -m 1 \
+        -C ${HOME}/resources/CONFIG \
+        -l $WORD \
+        -M ${HOME}/models/hmm0 \
+        -o $WORD \
+        -L ${DATA}/lab/train \
+	${HOME}/models/proto/$PROTO \
+	${DATA}/mfcc/train/${U}_train.mfcc
+done

@@ -1,0 +1,29 @@
+signal s1219694_test_seq
+type 0
+color 121
+comment created using WaveSurfer Wed Nov 28 07:50:38 2012
+font -misc-*-bold-*-*-*-15-*-*-*-*-*-*-*
+separator ;
+nfields 1
+#
+    1.127500  121 s1219694_test_seq01
+    1.772500  121 s1219694_test_seq02
+    2.377500  121 s1219694_test_seq03
+    2.915089  121 s1219694_test_seq04
+    3.585033  121 s1219694_test_seq05
+    4.155317  121 s1219694_test_seq06
+    4.875092  121 s1219694_test_seq07
+    5.558878  121 s1219694_test_seq08
+    6.264811  121 s1219694_test_seq09
+    6.918145  121 s1219694_test_seq10
+    7.704361  121 s1219694_test_seq11
+    8.294023  121 s1219694_test_seq12
+    8.986114  121 s1219694_test_seq13
+    9.678206  121 s1219694_test_seq14
+    10.242952  121 s1219694_test_seq15
+    10.937812  121 s1219694_test_seq16
+    11.544084  121 s1219694_test_seq17
+    12.230639  121 s1219694_test_seq18
+    12.751091  121 s1219694_test_seq19
+    13.382279  121 s1219694_test_seq20
+    13.891658  121 s1219694_test_seq21

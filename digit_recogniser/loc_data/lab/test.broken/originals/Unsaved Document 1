@@ -1,0 +1,70 @@
+SMALL REC
+`ls /home/simonk/data/sp1/mfcc/test/markm_test?(_)??.mfcc` \
+`ls /home/simonk/data/sp1/mfcc/test/jamesh_test?(_)??.mfcc` \
+`ls /home/simonk/data/sp1/mfcc/test/guy_test?(_)??.mfcc` \
+`ls /home/simonk/data/sp1/mfcc/test/sarah_test?(_)??.mfcc` \
+`ls /home/simonk/data/sp1/mfcc/test/fionac_test?(_)??.mfcc` \
+`ls /home/simonk/data/sp1/mfcc/test/stav_test?(_)??.mfcc` 
+
+
+BIG REC 
+`ls /home/simonk/data/sp1/mfcc/test/davidt_test?(_)??.mfcc` \
+`ls /home/simonk/data/sp1/mfcc/test/s0457086_test?(_)??.mfcc` \
+`ls /home/simonk/data/sp1/mfcc/test/nicola_test?(_)??.mfcc` \
+`ls /home/simonk/data/sp1/mfcc/test/kristina_test?(_)??.mfcc` \
+`ls /home/simonk/data/sp1/mfcc/test/s0343373_test?(_)??.mfcc` \
+`ls /home/simonk/data/sp1/mfcc/test/s9810638_test?(_)??.mfcc`
+
+HEAD
+`ls /home/simonk/data/sp1/mfcc/test/s0126339_test?(_)??.mfcc` \
+`ls /home/simonk/data/sp1/mfcc/test/s0451342_test?(_)??.mfcc` \
+`ls /home/simonk/data/sp1/mfcc/test/s0678004_test?(_)??.mfcc` \
+`ls /home/simonk/data/sp1/mfcc/test/s0452991_test?(_)??.mfcc` \
+`ls /home/simonk/data/sp1/mfcc/test/s0127196_test?(_)??.mfcc` \
+`ls /home/simonk/data/sp1/mfcc/test/kit_test?(_)??.mfcc` 
+
+
+RES HEAD
+ -I /home/simonk/data/sp1/lab/test/s0126339_test.mlf \
+ -I /home/simonk/data/sp1/lab/test/s0451342_test.mlf \
+ -I /home/simonk/data/sp1/lab/test/s0678004_test.mlf \
+ -I /home/simonk/data/sp1/lab/test/s0452991_test.mlf \
+ -I /home/simonk/data/sp1/lab/test/s0127196_test.mlf \
+ -I /home/simonk/data/sp1/lab/test/kit_test.mlf \
+
+ rec/s0126339_test?(_)??.rec \
+ rec/s0451342_test?(_)??.rec \
+ rec/s0678004_test?(_)??.rec \
+ rec/s0452991_test?(_)??.rec \
+ rec/s0127196_test?(_)??.rec \
+ rec/kit_test?(_)??.rec 
+
+RES BIG
+ -I /home/simonk/data/sp1/lab/test/davidt_test.mlf \
+ -I /home/simonk/data/sp1/lab/test/s0457086_test.mlf \
+ -I /home/simonk/data/sp1/lab/test/nicola_test.mlf \
+ -I /home/simonk/data/sp1/lab/test/kristina_test.mlf \
+ -I /home/simonk/data/sp1/lab/test/s0343373_test.mlf \
+ -I /home/simonk/data/sp1/lab/test/s9810638_test.mlf \
+
+ rec/davidt_test?(_)??.rec \
+ rec/s0457086_test?(_)??.rec \
+ rec/nicola_test?(_)??.rec \
+ rec/kristina_test?(_)??.rec \
+ rec/s0343373_test?(_)??.rec \
+ rec/s9810638_test?(_)??.rec 
+
+RES SMALL
+ -I /home/simonk/data/sp1/lab/test/markm_test.mlf \
+ -I /home/simonk/data/sp1/lab/test/jamesh_test.mlf \
+ -I /home/simonk/data/sp1/lab/test/guy_test.mlf \
+ -I /home/simonk/data/sp1/lab/test/sarah_test.mlf \
+ -I /home/simonk/data/sp1/lab/test/fionac_test.mlf \
+ -I /home/simonk/data/sp1/lab/test/stav_test.mlf \
+
+ rec/markm_test?(_)??.rec \
+ rec/jamesh_test?(_)??.rec \
+ rec/guy_test?(_)??.rec \
+ rec/sarah_test?(_)??.rec \
+ rec/fionac_test?(_)??.rec \
+ rec/stav_test?(_)??.rec 

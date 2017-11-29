@@ -1,0 +1,74 @@
+#!/bin/sh
+
+CURRENT=${CURRENT:-/Users/yekun/Desktop/0SP/digit_recogniser}
+DATA=${DATA:-${CURRENT}/loc_data}
+PROTO=5state
+set -x
+# if [ $# -lt 1 ]; then
+#     echo "error.. need train user list"
+#     exit 1
+# fi
+#   TRAINLIST=$1
+# initialise each model
+
+TRAIN=$1
+
+rm -f models/hmm0/*
+rm -f models/hmm1/*
+rm -f resources/train_list.scp
+
+# rm resources/train_list.scp
+echo $1
+for USER in  `cat ${TRAIN}`
+do
+    echo  "---------" ${DATA}/mfcc/train/${USER}_train.mfcc
+    echo  ${DATA}/mfcc/train/${USER}_train.mfcc   >> resources/train_list.scp
+
+done
+
+echo Made script file ${CURRENT}/resources/train_list.scp
+
+for WORD in `cat resources/word_list`
+do
+echo Initialising model of $WORD
+HInit -T 1 \
+      -G ESPS \
+      -m 1 \
+      -C resources/CONFIG \
+      -l $WORD \
+      -M models/hmm0 \
+      -o $WORD \
+      -L ${DATA}/lab/train \
+      -S resources/train_list.scp \
+         models/proto/$PROTO
+
+
+ # at this point, the special shell variable $? contains the exit status of HInit
+ # for readability, let's put that status into a variable with a nicer name
+ STATUS=$?
+
+ # test whether the return status is 0 (indicates success)
+ if [ ${STATUS} = 0 ]
+ then
+  echo "HInit ran without error"
+ else
+  echo "Something went wrong in HInit, which exited with code "${STATUS}
+  # a good idea is to exit this script with the same error code
+  # (or some other non-zero value, if you prefer)
+  # so that anything calling this script can also detect the error
+  exit ${STATUS}
+ fi
+
+
+
+echo training model of $WORD
+HRest -T 1 \
+	    -G ESPS \
+      -m 1 \
+      -C resources/CONFIG \
+      -l $WORD \
+      -M models/hmm1 \
+      -L ${DATA}/lab/train/ \
+	       models/hmm0/$WORD \
+         -S resources/train_list.scp
+done

@@ -1,0 +1,28 @@
+signal s1515847_train
+type 0
+color 121
+comment created using WaveSurfer Wed Dec 02 09:27:34 2015
+font -misc-*-bold-*-*-*-15-*-*-*-*-*-*-*
+separator ;
+nfields 1
+#
+    0.823108  121 junk
+    1.269415  121 zero
+    2.549804  121 junk
+    2.851610  121 one
+    4.571600  121 junk
+    4.956937  121 two
+    6.368764  121 junk
+    6.920758  121 three
+    8.170557  121 junk
+    8.756035  121 four
+    10.003594  121 junk
+    10.623286  121 five
+    11.628332  121 junk
+    12.451116  121 six
+    13.497822  121 junk
+    14.216456  121 seven
+    15.388142  121 nine
+    15.960966  121 eight
+    17.080577  121 junk
+    17.710684  121 nine
